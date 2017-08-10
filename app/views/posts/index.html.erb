@@ -1,0 +1,13 @@
+<% @posts.each do |x| %>
+<div class="white">
+  <%= image_tag x.image.url(:medium) %>
+  <br>
+  <%= x.description %>
+  <br>
+  <%= link_to "Destroy", x, method: :delete %>
+
+</div>
+<% end %>
+
+
+
